@@ -1,0 +1,25 @@
+Anatomia para tabelas grandes
+table
+CAPTION
+    thead
+       tr td th
+
+    tbody
+       tr, td th
+
+    tfoot
+      tr td th
+
+
+
+use estilos
+
+
+
+
+
+
+
+
+
+
