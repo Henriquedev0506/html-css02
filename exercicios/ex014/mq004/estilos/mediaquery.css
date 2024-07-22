@@ -1,62 +1,141 @@
 @charset "UTF-8";
-/*mobile first*/
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
-    }
-    
-    body, html{
-        width: 100vw;
-        height: 100vh;
-    }
-    body{
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    
-    
-    }
-    main{
-    background-color: rgba(255, 255, 255, 0.555);
-    width: 90vw;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-    }
+/*todas as demais midias*/
 
+/*typical device breakpoints
+
+
+pequenas telas:até 600px
+celular 600px até 768px
+tablet:769px até 992px
+desktop:992px até 1200px
+grandes telas:acima de 1200px
+
+
+*/
+@media print{
+
+body{
+    background-image: url(../imagens/back-print.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+main h1{
+
+    text-shadow: none;
+    color: black;
+}
+main{
+border: 2px solid black;
+
+}
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+body{
+background-image: url(../imagens/back-tablet.jpg);
+
+
+}
 img#phone{
+    display: none;
+    
+    
+    }
+    img#tablet{
+        display: block;
+    
+    }
+    img#print{
+        display: none;
+    
+    }
+    img#pc{
+        display: none;
+    
+    }
+    img#tv{
+        display: none;
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{
 display: none;
 
+    }
+    
+    img#tablet{
+        display: none;
+    
+    }
+    img#print{
+        display: none;
+    
+    }
+    img#pc{
+        display: block;
+    
+    }
+    img#tv{
+        display: none;
+    
+    }
+    
+    }
 
-}
-img#table{
+
+
+
+
+@media screen and (min-width:1200px){
+
+
+body{
+background-image: url(../imagens/back-tv.jpg);
+img#phone{
     display: none;
+    
+    
+    }
+    img#tablet{
+        display: none;
+    
+    }
+    img#print{
+        display: none;
+    
+    }
+    img#pc{
+        display: none;
+    
+    }
+    img#tv{
+        display: block;
+    
+    }
+    
 
 }
-img#print{
-    display: none;
-
 }
-img#pc{
-    display: none;
-
-}
-img#tv{
-    display: none;
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
